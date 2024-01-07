@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-const Carousel = ({ slides }) => {
+
+export const Carousel = ({ slides }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
