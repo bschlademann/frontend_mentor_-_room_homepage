@@ -125,15 +125,41 @@ table {
 }
 /* MEYER RESET END */
 
-#root {
+/* @font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-VariableFont_slnt\,wght.ttf");
+} */
+
+:root {
+  /* Primary */
+
   --dark-gray: hsl(0, 0%, 63%);
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
   --very-dark-gray: hsl(0, 0%, 27%);
 }
 
-html {
+body {
   font-size: 12px;
-  font-family: "League Spartan", sans-serif;
+  font-family: 'League Spartan', sans-serif;
 }
 
+h1 {
+  /* font-size: 48px; */
+}
+
+
+
+/* @media (min-width: 770px){
+  main {
+    width: 730px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+  }
+} */
+
+@media (min-width: 1440px) {
+  main {
+    width: 1440px;
+  }
+}
