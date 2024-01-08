@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Slide } from "../types";
+import { ShopNow } from "./ShopNow";
 
 export const Carousel = ({ slides }: { slides: Slide[] }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -24,7 +25,7 @@ export const Carousel = ({ slides }: { slides: Slide[] }) => {
             <div className="slide-content">
               <h2>{slide.title}</h2>
               <p>{slide.description}</p>
-              <button onClick={slide.action}>Shop Now</button>
+              <ShopNow/>
             </div>
           )}
         </div>
