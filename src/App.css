@@ -131,8 +131,6 @@ table {
 } */
 
 :root {
-  /* Primary */
-
   --dark-gray: hsl(0, 0%, 63%);
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
@@ -144,8 +142,14 @@ body {
   font-family: 'League Spartan', sans-serif;
 }
 
+main {
+ width: 375px;
+}
+
 h1 {
-  /* font-size: 48px; */
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -0.2rem;
 }
 
 
@@ -159,7 +163,7 @@ h1 {
 } */
 
 @media (min-width: 1440px) {
-  main {
+  /* main {
     width: 1440px;
-  }
+  } */
 }

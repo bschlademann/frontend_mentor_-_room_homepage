@@ -1,0 +1,13 @@
+.carousel-container {
+    overflow: hidden;
+  }
+  
+  .slides-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    min-width: 100%; /* Ensure each slide is full width of the carousel */
+  }
+  
