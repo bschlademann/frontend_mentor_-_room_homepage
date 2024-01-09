@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Slide } from "../types";
 import { ShopNow } from "./ShopNow";
 
+// import "./Carousel.css";
 export const Carousel = ({ slides }: { slides: Slide[] }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -12,24 +13,23 @@ export const Carousel = ({ slides }: { slides: Slide[] }) => {
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
+  const slide = slides[currentSlide];
 
   return (
     <div className="carousel-container">
-      {slides.map((slide, index) => (
+      <div className="slides-wrapper">
         <div
           key={slide.id}
-          className={`slide ${index === currentSlide ? "active" : ""}`}
+          className="slide"
           style={{ backgroundImage: `url(${slide.image})` }}
         >
-          {index === currentSlide && (
-            <div className="slide-content">
-              <h2>{slide.title}</h2>
-              <p>{slide.description}</p>
-              <ShopNow/>
-            </div>
-          )}
+          <div className="slide-content">
+            <h1>{slide.title}</h1>
+            <p>{slide.description}</p>
+          </div>
+          <ShopNow />
         </div>
-      ))}
+      </div>
       <button className="prev" onClick={prevSlide}>
         &#10094;
       </button>
