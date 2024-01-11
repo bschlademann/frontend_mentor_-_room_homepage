@@ -1,13 +1,48 @@
 .carousel-container {
-    overflow: hidden;
-  }
-  
-  .slides-wrapper {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-  .slide {
-    min-width: 100%; /* Ensure each slide is full width of the carousel */
-  }
-  
+  /* overflow: hidden; */
+  /* height: ; */
+}
+
+.slides-wrapper {
+  /* display: flex;
+    transition: transform 0.5s ease; */
+}
+
+.slide {
+  /* Ensure each slide is full width of the carousel */
+  /* min-width: 100%;  */
+}
+
+.carousel-container .img-container {
+  height: 360px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-container img {
+  height: 100%;
+  width: auto;
+}
+
+.button-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.button-container .button {
+  width: 56px;
+  height: 56px;
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container .button img{
+  width: 20%;
+  height: 33%;
+  background-color: var(--black);
+}
