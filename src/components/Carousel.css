@@ -13,16 +13,17 @@
   /* min-width: 100%;  */
 }
 
-.carousel-container .img-container {
-  height: 360px;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel-container img {
-  height: 100%;
-  width: auto;
+.carousel-container {
+  .img-container {
+    height: 360px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  img {
+    height: 100%;
+    width: auto;
+  }
 }
 
 .button-container {
@@ -30,19 +31,17 @@
   right: 0;
   bottom: 0;
   display: flex;
-}
-
-.button-container .button {
-  width: 56px;
-  height: 56px;
-  background-color: var(--black);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button-container .button img{
-  width: 20%;
-  height: 33%;
-  background-color: var(--black);
+  .button {
+    width: 56px;
+    height: 56px;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button img {
+    width: 20%;
+    height: 33%;
+    background-color: var(--black);
+  }
 }
