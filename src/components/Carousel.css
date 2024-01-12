@@ -14,34 +14,57 @@
 }
 
 .carousel-container {
-  .img-container {
-    height: 360px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  img {
-    height: 100%;
-    width: auto;
-  }
-}
+  .slides-wrapper {
+    .slide {
+      /* display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%; */
+      /* gap: 3.3rem; */
 
-.button-container {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  .button {
-    width: 56px;
-    height: 56px;
-    background-color: var(--black);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .button img {
-    width: 20%;
-    height: 33%;
-    background-color: var(--black);
+      .img-container {
+        height: 360px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+
+        img {
+          height: 100%;
+          width: auto;
+        }
+        .button-container {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          .button {
+            width: 56px;
+            height: 56px;
+            background-color: var(--black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 20%;
+              height: 33%;
+              background-color: var(--black);
+            }
+          }
+        }
+      }
+
+      .slide-content {
+        width: 300px;
+        outline: 1px solid red;
+
+        h1 {
+          font-size: 42px;
+          text-align: center;
+          font-weight: 600;
+          letter-spacing: -0.2rem;
+        }
+        /* ShopNow Component*/
+      }
+    }
   }
 }
