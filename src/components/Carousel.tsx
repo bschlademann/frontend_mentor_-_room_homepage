@@ -17,24 +17,22 @@ export const Carousel = ({ slides }: { slides: Slide[] }) => {
 
   return (
     <div className="carousel-container">
-      <div className="slides-wrapper">
-        <div key={slide.id} className="slide">
-          <div className="img-container">
-            <img src={`${slide.imageMobile}`} alt="" />
-            <div className="button-container">
+      <div key={slide.id} className="slide">
+        <div className="img-container">
+          <img src={`${slide.imageMobile}`} alt="" />
+          <div className="button-container">
             <div className="button" onClick={prevSlide}>
-                <img src="images/icon-angle-left.svg" alt="" />
-              </div>
-              <div className="button" onClick={nextSlide}>
-                <img src="images/icon-angle-right.svg" alt="" />
-              </div>
+              <img src="images/icon-angle-left.svg" alt="" />
+            </div>
+            <div className="button" onClick={nextSlide}>
+              <img src="images/icon-angle-right.svg" alt="" />
             </div>
           </div>
-          <div className="slide-content">
-            <h1>{slide.title}</h1>
-            <p>{slide.description}</p>
-          </div>
+        </div>
 
+        <div className="slide-content">
+          <h1>{slide.title}</h1>
+          <p>{slide.description}</p>
           <ShopNow />
         </div>
       </div>
