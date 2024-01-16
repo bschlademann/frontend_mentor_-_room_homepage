@@ -139,20 +139,44 @@ table {
 
 body {
   font-size: 12px;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
 }
 
 main {
- width: 375px;
+  position: relative;
+  width: 375px;
+  display: grid;
+  gap: 71px;
+}
+
+.text-wrapper {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  /* ShopNow Component*/
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 600;
-  letter-spacing: -0.2rem;
+  letter-spacing: -1.7px;
+  line-height: 0.95;
 }
 
 
+h2 {
+  font-size: 0.85rem;
+  letter-spacing: 6px;
+  font-weight: 800;
+}
+
+p {
+  color: var(--dark-gray);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
 
 /* @media (min-width: 770px){
   main {
@@ -162,8 +186,9 @@ h1 {
   }
 } */
 
+/* ! when 2nd monitor is on 150%, the resolution is to not enough to reach 1440px */
 @media (min-width: 1440px) {
-  /* main {
-    width: 1440px;
-  } */
+  main {
+    width: 100%;
+  }
 }

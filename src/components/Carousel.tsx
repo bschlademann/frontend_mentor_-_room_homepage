@@ -30,7 +30,7 @@ export const Carousel = ({ slides }: { slides: Slide[] }) => {
           </div>
         </div>
 
-        <div className="slide-content">
+        <div className="text-wrapper">
           <h1>{slide.title}</h1>
           <p>{slide.description}</p>
           <ShopNow />
