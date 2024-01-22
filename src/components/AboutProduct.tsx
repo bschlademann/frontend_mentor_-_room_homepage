@@ -2,7 +2,9 @@ import "./AboutProduct.css";
 export const AboutProduct = () => {
   return (
     <div className="about-product-wrapper">
-      <img src="images/image-about-dark.jpg" alt="" />
+      <div className="image-container">
+        <img className="image-upper" src="images/image-about-dark.jpg" alt="" />
+      </div>
       <div className="text-wrapper">
         <h2>ABOUT OUR FURNITURE</h2>
         <p>
@@ -14,7 +16,9 @@ export const AboutProduct = () => {
           dream space.
         </p>
       </div>
-      <img src="images/image-about-light.jpg" alt="" />
+      <div className="image-container">
+        <img className="image-lower" src="images/image-about-light.jpg" alt="" />
+      </div>
     </div>
   );
 };

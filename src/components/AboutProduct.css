@@ -4,12 +4,24 @@
   align-items: center;
   gap: 52px;
 
-  img {
-    width: 100%;
+  .image-container {
+    overflow: hidden;
+    /* position: relative; */
+    img {
+      width: 100%;
+      /* object-fit: cover; */
+      /* object-position: center; */
+    }
+    .image-upper {
+      transform: scale(1.02);
+    }
+    .image-lower {
+      transform: scale(1.01);
+    }
   }
 
   p {
-    margin-top: 5px;
-    margin-bottom: -12px;
+    margin-top: 0.1rem;
+    margin-bottom: -0.7rem;
   }
 }
