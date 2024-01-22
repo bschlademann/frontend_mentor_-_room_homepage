@@ -4,5 +4,4 @@ export type Slide = {
     description: string;
     imageDesktop: string;
     imageMobile: string;
-    action: () => void;
 }
